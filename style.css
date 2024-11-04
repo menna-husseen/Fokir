@@ -1,0 +1,443 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ________________ body _______________*/
+.color-main {
+  color: #ff305b;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+a {
+  text-decoration: none;
+  color: rgb(18, 17, 17);
+}
+.clr {
+  clear: both;
+}
+
+/* _________________ home _____________ */
+.home {
+  background-image: url(img/slider/slider-01.jpg);
+  background-size: cover;
+  background-position: 100% 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.content-home {
+  width: 50%;
+  margin: 250px auto 0;
+  text-align: center;
+  font-size: x-large;
+}
+.content-home h2 {
+  color: white;
+  padding: 20px 0;
+}
+.content-home h1 {
+  padding: 20px 0;
+  font-size: 70px;
+  font-weight: 800;
+}
+.content-home p {
+  color: whitesmoke;
+  padding: 20px 0;
+}
+.content-home p::after {
+  content: "|";
+  animation-name: typing;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "D|";
+  }
+  15% {
+    content: "De|";
+  }
+  20% {
+    content: "Des|";
+  }
+  25% {
+    content: "Desi|";
+  }
+  30% {
+    content: "Desig|";
+  }
+  35% {
+    content: "Design|";
+  }
+  40% {
+    content: "Designe|";
+  }
+  45% {
+    content: "Designer|";
+  }
+  50% {
+    content: "Designe|";
+  }
+  55% {
+    content: "Design|";
+  }
+  60% {
+    content: "Desig|";
+  }
+  65% {
+    content: "Desi|";
+  }
+  70% {
+    content: "Des|";
+  }
+  80% {
+    content: "De|";
+  }
+  90% {
+    content: "D|";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.54);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* __________________nav  ______________ */
+nav {
+  overflow: auto;
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.343);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+nav a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.logo {
+  float: left;
+  padding: 5px;
+}
+.list-nav {
+  float: right;
+}
+.list-nav ul a {
+  float: left;
+  padding: 10px;
+  color: white;
+  transition: 1s;
+}
+.list-nav ul a:hover {
+  color: #ff305b;
+}
+nav .nav-content {
+  width: 90%;
+  margin: auto;
+}
+
+#about .pic img {
+  box-shadow: -25px -25px 0 -10px white, -25px -25px 0 3px #555555;
+}
+
+#about .container {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.content-about {
+  float: left;
+  width: 50%;
+}
+
+.container .pic {
+  padding: 10px;
+  text-align: center;
+}
+#about .container .layer-pic{
+   width:61%;
+  position: relative;
+  float: left;}
+#about .container .layer-pic .layer{
+  background-color: rgba(0, 0, 0, 0.495);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0;
+}
+#about .container .layer-pic .layer:hover{
+  opacity: 1;
+}
+#about .container .layer-pic .layer .icons{
+margin-top: 70%;
+}
+.container .txt {
+  padding: 10px;
+}
+
+.container .txt .brdr {
+  border: 1px dashed black;
+}
+.container .txt p {
+  padding: 30px 0;
+}
+
+.one,
+.two {
+  float: left;
+  padding: 50px 50px 50px 0;
+  margin-right: 40px;
+}
+
+#about .layer2 .container .btn {
+  color: white;
+  width: 150px;
+  background-color: #ff305b;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ff305b;
+}
+#about .layer2 .container .btn {
+  float: left;
+  margin-right: 15px;
+  transition: 1s;
+}
+#about .layer2 .container .btn:hover {
+  background-color: red;
+}
+
+#Our-services h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 0 15px;
+}
+.brdr1 {
+  width: 100px;
+  height: 1px;
+  margin: auto;
+  background-color: #ff305b;
+}
+.brdr2 {
+  width: 150px;
+  height: 1px;
+  margin: 2px auto;
+  background-color: #ff305b;
+}
+.brdr3 {
+  width: 100px;
+  height: 1px;
+  margin: auto;
+  background-color: #ff305b;
+}
+
+.icon {
+  font-size: 30px;
+  color: #ff305b;
+}
+
+#Our-services .Our-services-item {
+  width: 21.5%;
+  text-align: center;
+  float: left;
+  padding: 30px;
+  margin: 22px;
+}
+
+#Our-services .container {
+  margin: auto;
+}
+
+#Our-services {
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+
+#Our-services h3 {
+  padding: 20px 0;
+}
+
+#Our-services .Our-services-item:hover {
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+#Portfolio h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 0 15px;
+}
+
+#Portfolio .container-links {
+  text-align: center;
+  width: 30%;
+  margin: 15px auto;
+  overflow: auto;
+}
+#Portfolio .container-links .links {
+  float: left;
+  padding: 15px;
+}
+
+#Portfolio .members {
+  overflow: auto;
+  padding: 40px;
+}
+
+#Portfolio .members .member-layer {
+  width: 33.3%;
+  position: relative;
+  float: left;
+}
+#Portfolio .members .member-layer img {
+  width: 100%;
+  padding: 15px;
+}
+
+#Portfolio .members .member-layer .layer {
+  background-color: rgba(0, 0, 0, 0.41);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0;
+}
+#Portfolio .members .member-layer .layer:hover {
+  opacity: 9;
+}
+
+#info .container {
+  background-color: #f1f1f1;
+  width: 90%;
+  margin: auto;
+  overflow: auto;
+}
+#info .container .content {
+  float: left;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+}
+
+#info .container .content h2 {
+  margin: 30px;
+}
+
+#clients .container {
+  text-align: center;
+}
+#clients .container h2 {
+  padding: 20px;
+}
+
+#blog .container {
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 25px 0;
+}
+#blog .container h2 {
+  padding: 20px;
+}
+#blog .container .content-blog {
+  overflow: auto;
+  display: flex;
+  padding: 20px;
+}
+#blog .container .content-blog img {
+  width: 90%;
+}
+
+#contact .container h2,
+#contact .container .hr-brdr {
+  text-align: center;
+  margin: 15px 0;
+}
+#contact .container {
+  padding: 15px;
+}
+
+#contact .container form {
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+}
+
+#contact .container form input {
+  padding: 17px 30px;
+  margin: 12px;
+  border-radius: 10px;
+  border: 1px solid #312f2f;
+  box-shadow: 1px 1px 1px gray;
+}
+#contact .container form .size {
+  width: 500px;
+}
+#contact .container form textarea {
+  border-radius: 10px;
+  border: 1px solid #312f2f;
+  box-shadow: 1px 1px 1px gray;
+  padding: 17px 30px;
+  margin-left: 15px;
+}
+
+#contact .container form button {
+  padding: 10px 30px;
+  margin-left: 15px;
+  border: 1px solid #ff305b;
+  box-shadow: 1px 1px 1px gray;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff305b;
+  transition: 1s;
+}
+#contact .container form button:hover{background-color: red;}
+
+.finaly .container {
+  background-color: #1f1f1f;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.icons {
+  font-size: 25px;
+ display: block;
+}
+.icons .five:hover,
+.icons .six:hover,
+.icons .three:hover,
+.icons .four:hover {
+  color: #ff305b;
+}
+
+.finaly .container p{margin: 20px 0;}
+
+
+
+
+
+
+
+
+
